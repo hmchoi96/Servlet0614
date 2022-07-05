@@ -49,7 +49,6 @@ public class ServletTest10Controller extends HttpServlet{
 		out.println("</body></html>");
 		
 		
-		
 //		//맵의 전체 데이터 확인하기
 //		Set<String> keys = userMap.keySet();
 		
