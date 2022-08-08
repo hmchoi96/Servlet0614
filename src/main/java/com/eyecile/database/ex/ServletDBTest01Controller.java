@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.eyecile.common.MysqlService;
 
-@WebServlet("/db/test01")
+//@WebServlet("/db/test01")
 public class ServletDBTest01Controller extends HttpServlet{
 
 	@Override
