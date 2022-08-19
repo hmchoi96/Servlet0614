@@ -15,7 +15,7 @@ public class MysqlService {
 	
 	private final String url = "jdbc:mysql://localhost:3306/SQL0530";
 	private final String userId = "root";
-	private final String password = "root";
+	private final String password = "speed850";
 	
 	Connection connection;
 	Statement statement;
@@ -73,5 +73,4 @@ public class MysqlService {
 		}
 		
 	}
-
 }
