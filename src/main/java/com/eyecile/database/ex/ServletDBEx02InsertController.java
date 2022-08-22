@@ -1,7 +1,6 @@
 package com.eyecile.database.ex;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,7 +31,7 @@ public class ServletDBEx02InsertController extends HttpServlet {
 		String query = "insert into `new_user`\n"
 				+ "(`name`,`yyyymmdd`,`introduce`,`email`,`createdAt`,`updatedAt`)\n"
 				+ "value\n"
-				+ "(" + name + "','" + yyyymmdd + "', '" + introduce + "', '" + email + "', now(), now());";
+				+ "('" + name + "','" + yyyymmdd + "', '" + introduce + "', '" + email + "', now(), now());";
 		
 		
 		int count = mysqlService.update(query);

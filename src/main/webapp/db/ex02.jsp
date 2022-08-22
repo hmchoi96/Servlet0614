@@ -27,7 +27,8 @@
 				<th>이름</th>
 				<th>생년월일</th>
 				<th>이메일</th>
-			</tr>
+				<th></th>
+			</tr> 
 		</thead>
 		
 		<tbody>
@@ -37,6 +38,8 @@
 				<td><%= resultSet.getString("name") %></td>
 				<td><%= resultSet.getInt("yyyymmdd") %></td>
 				<td><%= resultSet.getString("email") %></td>
+				<td><a href="/db/ex02/delete?id=<%=resultSet.getInt("id") %>">삭제</a></td>
+				
 			</tr>
 			
 		<% } %>
