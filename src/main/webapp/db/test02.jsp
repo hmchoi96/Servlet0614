@@ -33,8 +33,9 @@
 			%>
 		
 		<tr>
-			<td><%= resultSet.getString("name") %></td>
-			<td><a href="<%= resultSet.getString("url") %>"><%= resultSet.getString("url") %></a></td>
+			<td><%= resultSet.getString("name") %></td> 
+			<!-- target="_blank"  => 새 탭으로 열  -->
+			<td><a target="_blank" href="<%= resultSet.getString("url") %>"><%= resultSet.getString("url") %></a></td>
 			<td><a href="/db/test02/delete?id=<%= resultSet.getInt("id") %>">삭제하기</a></td>
 		</tr>
 		
@@ -42,6 +43,7 @@
 		</tbody>
 	</table>
 
+	<a href="/db/test02_2.jsp" class="btn">추가하기</a>
 
 
 </body>
